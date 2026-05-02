@@ -10,7 +10,7 @@ export default function handler(req, res) {
     return res.status(400).json({ error: "Missing path" });
   }
 
-  const expires = Math.floor(Date.now() / 1000) + 10; // 2 minutos
+  const expires = Math.floor(Date.now() / 1000) + 30; // 2 minutos
 
   const data = `${path}:${expires}`;
 
